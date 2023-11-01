@@ -1,5 +1,9 @@
+"use client"
+
 import Header from "@/components/header"
 import Listitem from "@/components/listitem"
+
+import PageContent from "./components/pageContent"
 
 export default function IndexPage() {
   return (
@@ -24,7 +28,7 @@ export default function IndexPage() {
             Newest songs
           </h1>
         </div>
-        <div className="py-2">List of Songs!</div>
+        <PageContent />
       </div>
     </div>
   )

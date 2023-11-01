@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useMemo, useState } from "react"
+import { useMemo } from "react"
 import { usePathname } from "next/navigation"
 import { BiSearch } from "react-icons/bi"
 import { HiHome } from "react-icons/hi"

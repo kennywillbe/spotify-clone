@@ -2,9 +2,7 @@ import ModalProvider from "@/providers/modalprovider"
 import ToasterProvider from "@/providers/toastprovider"
 
 import "@/styles/globals.css"
-import { useEffect, useState } from "react"
 import { Metadata } from "next"
-import axios from "axios"
 
 import { siteConfig } from "@/config/site"
 import { fontSans } from "@/lib/fonts"
@@ -25,8 +23,6 @@ export const metadata: Metadata = {
   ],
   icons: {
     icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
   },
 }
 
@@ -34,7 +30,7 @@ interface RootLayoutProps {
   children: React.ReactNode
 }
 
-export default function RootLayout({ children }: RootLayoutProps) {
+export default async function RootLayout({ children }: RootLayoutProps) {
   return (
     <>
       <html lang="en" suppressHydrationWarning>

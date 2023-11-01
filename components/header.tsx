@@ -168,6 +168,15 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
             <>
               <div>
                 <Button
+                  onClick={() => router.push("/account")}
+                  className="bg-white text-black hover:border-[2px] hover:border-white hover:bg-black hover:text-white dark:bg-black dark:text-white dark:hover:border-black dark:hover:bg-white dark:hover:text-black"
+                  variant={"outline"}
+                >
+                  <FaUserAlt />
+                </Button>
+              </div>
+              <div>
+                <Button
                   onClick={registerModal.onOpen}
                   className="bg-white text-black hover:border-[2px] hover:border-white hover:bg-black hover:text-white dark:bg-black dark:text-white dark:hover:border-black dark:hover:bg-white dark:hover:text-black"
                   variant={"outline"}
